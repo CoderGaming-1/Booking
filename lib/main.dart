@@ -1,3 +1,7 @@
+import 'package:bookingapp/screens/login/login_page.dart';
+import 'package:bookingapp/screens/onBoarding/onboarding_screen.dart';
+import 'package:bookingapp/screens/sign_up/sign_up_screen.dart';
+import 'package:bookingapp/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'screens/home/home_screen.dart';
@@ -14,12 +18,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'The Flutter Way',
       theme: ThemeData(
         textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const HomeScreen(),
+      home: const SignUpScreen(),
     );
   }
 }
